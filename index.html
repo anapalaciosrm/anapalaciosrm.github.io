@@ -12,7 +12,7 @@
 <meta property="og:image" content="https://anapalaciosrm.github.io/assets/img/antora-camera-roof.jpg">
 <meta property="og:url" content="https://anapalaciosrm.github.io/">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css?v=20261115143112">
+<link rel="stylesheet" href="style.css?v=20261115143547">
 </head>
 <body>
 
@@ -98,15 +98,43 @@
 <article id="floodmap" class="project">
   <p class="label meta"><span class="turq">02</span> Cofounder and Product Lead · Global Sustainability Challenge · 2025 to 2026</p>
   <h2>FloodMAP</h2>
-  <p class="outcome">1 of 3 global finalists. I presented our sensors to an international jury in Munich.</p>
+  <p class="outcome">1 of 3 global finalists. I presented our system to an international jury in Munich.</p>
   <div class="gallery">
-    <div class="grow" style="--sum:2.175;--n:2"><figure style="--ar:0.842"><img src="assets/img/floodmap-team.jpg" alt="FloodMAP team in Munich"><figcaption>Our team at the finals in Munich</figcaption></figure><figure style="--ar:1.333"><img src="assets/img/floodmap-module.jpg" alt="Weather module enclosure"><figcaption>The weather module I prototyped</figcaption></figure></div>
+    <div class="grow" style="--sum:2.175;--n:2"><figure style="--ar:0.842"><img src="assets/img/floodmap-team.jpg" alt="FloodMAP team at the finals in Munich"><figcaption>Our team at the finals in Munich</figcaption></figure><figure style="--ar:1.333"><img src="assets/img/fm-wmm.jpg" alt="Weather monitoring module"><figcaption>The weather module I built</figcaption></figure></div>
   </div>
   <div class="prose">
-    <p>Mexico City floods every rainy season, and the neighborhoods that flood worst have the least data. We set out to give them street level, real time flood information from cheap sensors.</p>
-    <p>I started by listening: more than 10 interviews with residents, hydrologists and government contacts. Then I built. I prototyped a solar powered weather station on an ESP32 that streams to a live dashboard, picked a drain water level sensor after comparing five approaches, and built a five stage pipeline that predicts drain levels from rainfall, so the system can tell a clogged drain from a broken sensor.</p>
+    <p>Cities flood faster than they can see it coming. In Mexico City, the neighborhoods that flood worst have the least data, and the agencies that run the drains don't share what they know. Flooding is usually spotted only after it has started.</p>
+    <p>FloodMAP is a network of low cost sensors that gives a city one shared, street level picture of rain and drains, so residents, first responders and planners can act on the same information. I started by listening: more than 10 interviews with residents, hydrologists, engineers and city officials, plus visits to real drains. Then we built it in three layers, and I worked on all three.</p>
   </div>
-  <ul class="chips small"><li>User research</li><li>ESP32</li><li>Sensors</li><li>Python</li><li>Anomaly detection</li></ul>
+  <div class="steps">
+    <section class="step">
+      <div class="step-imgs"><img src="assets/img/fm-breadboard.jpg" alt="Breadboard prototype"><img src="assets/img/fm-wmm-inside.jpg" alt="Inside the weather module"></div>
+      <p class="label turq">Step 1</p>
+      <h3>Hardware</h3><p class="step-sub">The sensors</p>
+      <p>I prototyped the weather module from breadboard to a soldered, solar powered unit in a 3D printed case for under $100, measuring temperature, humidity and pressure and streaming over WiFi. For the drain gauge, I compared five ways to measure water in a drain and picked the one that is cheap, low power and survives debris.</p>
+      <ul class="chips small"><li>ESP32</li><li>Sensors</li><li>Circuits</li><li>3D printing</li></ul>
+    </section>
+
+    <section class="step">
+      <div class="step-imgs"><img src="assets/img/fm-dashboard.jpg" alt="Live sensor dashboard"><img src="assets/img/fm-riskmap.jpg" alt="Flood risk heatmap"></div>
+      <p class="label turq">Step 2</p>
+      <h3>Intelligence</h3><p class="step-sub">Trusting the data</p>
+      <p>I got the modules logging to a live dashboard and wrote the Python that turns readings into city wide heatmaps. Then I built the check that keeps the map honest: a model predicts what each drain should read from the rainfall, so the system can tell a clogged drain from a broken sensor.</p>
+      <ul class="chips small"><li>Python</li><li>Data pipelines</li><li>Heatmaps</li><li>Anomaly detection</li></ul>
+    </section>
+
+    <section class="step">
+      <div class="step-imgs"><img src="assets/img/fm-app-map.jpg" alt="Neighborhood flood map app"><img src="assets/img/fm-app-reports.jpg" alt="Community reports screen"></div>
+      <p class="label turq">Step 3</p>
+      <h3>Application</h3><p class="step-sub">Who uses it, and how</p>
+      <p>One data source, three views. As product lead I defined what each user actually needs to act: a neighborhood flood map and reports for residents, drain health alerts for first responders, and long term risk maps for decision makers.</p>
+      <ul class="chips small"><li>Product definition</li><li>User research</li><li>Interface design</li></ul>
+    </section>
+
+  </div>
+  <div class="gallery">
+    <div class="grow" style="--sum:2.250;--n:3"><figure style="--ar:0.750"><img src="assets/img/fm-site.jpg" alt="Visiting a stormwater site"><figcaption>Visiting stormwater sites</figcaption></figure><figure style="--ar:0.750"><img src="assets/img/fm-expert.jpg" alt="Talking with a water expert"><figcaption>Learning from experts</figcaption></figure><figure style="--ar:0.750"><img src="assets/img/fm-grate.jpg" alt="A storm drain grate"><figcaption>Real drains, real debris</figcaption></figure></div>
+  </div>
   <blockquote>"One bad sensor can draw a map that looks right and is wrong. Reliability is hardware, software and trust in the data."</blockquote>
 </article>
 
