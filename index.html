@@ -131,16 +131,20 @@
     <h2>Ocean Oasis</h2>
     <p class="sub">Climate tech startup building wave powered, off grid seawater desalination buoys.</p>
   </header>
-  <figure class="wide"><img src="assets/img/wave-oceanoasis-transport.jpg" alt="Ocean Oasis desalination buoy on a truck at the port"></figure>
+  <div class="pair wide2">
+    <figure><img src="assets/img/wave-oceanoasis-transport.jpg" alt="Ocean Oasis pilot buoy on a truck at the port"></figure>
+    <figure><img src="assets/img/oceanoasis-pilot.jpg" alt="Ocean Oasis pilot buoy being lifted by crane"></figure>
+  </div>
   <dl class="rows">
     <div><dt class="label">Problem</dt><dd>Coastal communities need fresh water without the grid power and emissions of conventional desalination.</dd></div>
     <div><dt class="label">Solution</dt><dd>A floating buoy that uses wave motion to power desalination at sea.</dd></div>
     <div><dt class="label">What I did</dt><dd><ul>
       <li>Designed buoy subsystems and made trade off decisions on connections, structural layout and offshore materials, balancing durability, cost and manufacturability.</li>
-      <li>Ran hydrodynamic models to evaluate how much wave power the buoy could capture.</li>
+      <li>Ran hydrodynamic models (OrcaWave, OrcaFlex) and scaled the results to evaluate how much wave power the buoy could capture.</li>
+      <li>Turned the analysis into concrete design inputs for the pilot buoy.</li>
     </ul></dd></div>
     <div><dt class="label">Skills</dt><dd>Mechanical design · OrcaWave and OrcaFlex · hydrodynamic modeling · material selection</dd></div>
-    <div><dt class="label">Results</dt><dd>Subsystem designs and power capture analysis supporting the pilot buoy.</dd></div>
+    <div><dt class="label">Results</dt><dd>Power capture analysis across damping levels that informed the generator decisions. The <span class="coral">pilot buoy was built</span> after my internship on the design architecture I helped develop.</dd></div>
     <div class="lesson"><dt class="label">Lessons</dt><dd>Early climate hardware succeeds or fails on whether decisions are grounded in manufacturability, safety and a clear path to learning at pilot scale. Ask the right technical questions early.</dd></div>
   </dl>
 </article>
@@ -148,25 +152,26 @@
 <!-- 05 MARINE ENERGY -->
 <article id="marine" class="project">
   <header>
-    <p class="label"><span class="turq">05</span> · Mechanical design · Marine Energy Collegiate Competition · 2024 to present</p>
+    <p class="label"><span class="turq">05</span> · Mechanical design and testing · Marine Energy Collegiate Competition · 2024 to present</p>
     <h2>Stanford Marine Energy</h2>
-    <p class="sub">A wave energy converter to power offshore kelp aquaculture.</p>
+    <p class="sub">A compact wave energy converter to power sensor networks on offshore kelp farms.</p>
   </header>
-  <div class="pair">
-    <figure><img src="assets/img/wave-mecc-rig.jpg" alt="Test stand for the wave energy converter"></figure>
-    <figure><img src="assets/img/wave-oceanoasis-buoy.jpg" alt="Wave energy buoy in port"></figure>
+  <div class="pair wide2">
+    <figure><img src="assets/img/mecc-drybed.jpg" alt="Dry bed test rig for the linear generator"></figure>
+    <figure><img src="assets/img/mecc-drybed-scope.jpg" alt="Dry bed rig connected to an oscilloscope during testing"></figure>
   </div>
   <dl class="rows">
-    <div><dt class="label">Problem</dt><dd>Offshore kelp farms need power for sensors and equipment far from shore.</dd></div>
-    <div><dt class="label">Solution</dt><dd>A buoy that converts wave motion into electricity on site.</dd></div>
+    <div><dt class="label">Problem</dt><dd>Offshore kelp farms need power for their sensor networks far from shore, often in calm, low energy waves where most wave devices struggle.</dd></div>
+    <div><dt class="label">Solution</dt><dd>A small point absorber buoy: magnets ride up and down with the waves past stationary coils inside the spar, generating electricity.</dd></div>
     <div><dt class="label">What I did</dt><dd><ul>
-      <li>Estimated the power the sensors need and analyzed the wave climate at the deployment site.</li>
-      <li>Sized the buoy and generator, estimated hydrodynamic loads, and designed buoy structures and the power take off integration.</li>
-      <li>Combined market research and stakeholder interviews with the mechanical design.</li>
+      <li>Developed the CAD for the buoy and spar architecture and the internal subsystem layout used to define the test geometry.</li>
+      <li>Designed and built a modular dry bed test rig: a motor driven crank slider moves the magnets past the coils so we could test the generator before any water testing.</li>
+      <li>Integrated the generator's magnet carriage, coils and linear guidance, and measured its voltage and power output against our calculations.</li>
+      <li>Defined the scaled flume test plan: wave heights and periods for different kelp farm sites, a storm survival case and remote shutdown.</li>
     </ul></dd></div>
-    <div><dt class="label">Skills</dt><dd>Mechanical design · power budgeting · load estimation · testing</dd></div>
-    <div><dt class="label">Results</dt><dd>Competed in MECC 2025. Returning for MECC 2027.</dd></div>
-    <div class="lesson"><dt class="label">Lessons</dt><dd>Surface technical risks early and frame every decision around real world constraints.</dd></div>
+    <div><dt class="label">Skills</dt><dd>Fusion 360 · test rig design · linear generators · data acquisition · Froude scaling · first order FEA</dd></div>
+    <div><dt class="label">Results</dt><dd>Validated the generator under controlled motion before building the buoy, and flagged the key design risks: stroke limits, stiffness and power density. Competed in <span class="coral">MECC 2025</span>, returning for 2027.</dd></div>
+    <div class="lesson"><dt class="label">Lessons</dt><dd>Reduce unknowns early. Test the riskiest subsystem on its own before you build the whole system around it.</dd></div>
   </dl>
 </article>
 

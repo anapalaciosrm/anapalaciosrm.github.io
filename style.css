@@ -96,6 +96,8 @@ figure:hover img { transform: scale(1.025); }
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .pair figure { aspect-ratio: 4 / 3; }
 .pair.tall figure { aspect-ratio: 4 / 5; }
+.pair.wide2 { grid-template-columns: 3fr 2fr; }
+.pair.wide2 figure { aspect-ratio: auto; height: clamp(260px, 36vw, 480px); }
 .trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .trio figure { aspect-ratio: 3 / 4; background: #e9e7e3; }
 figcaption { position: absolute; left: 14px; bottom: 12px; color: var(--black); background: rgba(239,235,228,.88); padding: 4px 9px; border-radius: 2px; font-size: 11px; }
@@ -149,7 +151,8 @@ figure.empty .panel span { font-family: "Slab", serif; font-weight: 300; font-si
   .cols, .also ul { grid-template-columns: 1fr; }
   .facts > div, .rows > div { grid-template-columns: 1fr; gap: 4px; }
   .wide.short { aspect-ratio: 16 / 9; }
-  .pair, .trio { grid-template-columns: 1fr; }
+  .pair, .pair.wide2, .trio { grid-template-columns: 1fr; }
+  .pair.wide2 figure { height: auto; aspect-ratio: 4 / 3; }
   .pair.tall figure, .trio figure { aspect-ratio: 4 / 3; }
   .project { padding-top: 80px; }
   .index li a { grid-template-columns: 46px 1fr; }
