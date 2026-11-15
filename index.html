@@ -12,7 +12,7 @@
 <meta property="og:image" content="https://anapalaciosrm.github.io/assets/img/antora-camera-roof.jpg">
 <meta property="og:url" content="https://anapalaciosrm.github.io/">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="style.css?v=20261115141549">
+<link rel="stylesheet" href="style.css?v=20261115142910">
 </head>
 <body>
 
@@ -49,7 +49,7 @@
   <a class="card" href="#dengai"><img src="assets/img/dengai-app.jpg" alt=""><span class="cap"><b>Dengai</b><i>Climate and health · Winner</i></span></a>
   <a class="card" href="#marine"><img src="assets/img/mecc-drybed.jpg" alt=""><span class="cap"><b>Stanford Marine Energy</b><i>Wave energy converter</i></span></a>
   <a class="card" href="#oceanoasis"><img src="assets/img/oceanoasis-buoy.jpg" alt=""><span class="cap"><b>Ocean Oasis</b><i>Wave powered desalination</i></span></a>
-  <a class="card wide" href="#drone"><img src="assets/img/drone-yardtest.jpg" alt=""><span class="cap"><b>Farm survey drone</b><i>Capstone · camera workflow</i></span></a>
+  <a class="card wide" href="#drone"><img src="assets/img/drone-yardtest.jpg" alt=""><span class="cap"><b>Farm survey drone</b><i>Capstone · in the works</i></span></a>
   <a class="card wide" href="#more"><img src="assets/img/jdg-cover.jpg" alt=""><span class="cap"><b>More projects</b><i>Robot · casting · fabrication</i></span></a>
 </section>
 
@@ -162,17 +162,17 @@
 <article id="drone" class="project">
   <p class="label meta"><span class="turq">06</span> Senior capstone, team of 4 · O'Donohue Family Farm · Fall 2026 · In progress</p>
   <h2>Farm survey drone</h2>
-  <p class="outcome">I own the camera workflow: from a photo in the air to a result on a staff phone, with no WiFi.</p>
+  <p class="outcome">In the works: I lead the hardware and testing.</p>
   <div class="gallery">
     <div class="grow" style="--sum:3.208;--n:2"><figure style="--ar:1.429"><img src="assets/img/drone-rig.jpg" alt="Raspberry Pi 4 camera rig"><figcaption>My Pi 4 camera rig</figcaption></figure><figure style="--ar:1.779"><img src="assets/img/drone-yardtest.jpg" alt="Ana running the yard test"><figcaption>The yard test</figcaption></figure></div>
     <div class="grow" style="--sum:2.416;--n:1"><figure style="--ar:2.416"><img src="assets/img/drone-workflow.jpg" alt="Capture, move and deliver workflow"><figcaption>Capture, move, deliver</figcaption></figure></div>
   </div>
   <div class="prose">
-    <p>Staff at Stanford's O'Donohue Family Farm find 10 to 20 new gopher holes a day by walking the beds. Our team is building a drone that photographs every bed and a model that finds the holes. My part is the camera workflow: capture a sharp photo, move it to the Pi that runs the model, and deliver the results to a staff phone, with no WiFi in the fields.</p>
-    <p>I picked the camera after comparing three options: at the same detail, the 12 MP Camera Module 3 covers about three times the width of a global shutter camera, so fewer passes. I wrote the equations that tie flight height, speed and shutter to hole size and blur, then built a Raspberry Pi ground rig with the camera we will fly. My code locks the shutter at 500 µs, saves GPS and tilt with every photo, and cuts each photo into 40 tiles the model can read.</p>
-    <p>In the first yard test, light and blur held up at a 500 µs shutter and pixel size came within about 10% of my prediction. Next is a light air unit with real GPS and tilt sensors, and an NFC tap that opens the results on a phone. I earned my <span class="coral">FAA Part 107</span> remote pilot license to fly it.</p>
+    <p>Staff at Stanford's O'Donohue Family Farm find new gopher holes every day by walking the beds. Our team is building a drone that photographs every bed and a model that finds the holes, so the crew knows where to go each morning.</p>
+    <p>I lead the hardware and testing side: choosing the camera and computer that fly on the drone, building a ground rig to develop and test them before we fly, and running field tests to check that the photos are sharp and accurate enough for the model to find a hole.</p>
+    <p>The project is still in the works. Our first field tests are done, and next we build the lightweight unit that goes on the drone. I earned my <span class="coral">FAA Part 107</span> remote pilot license to fly it.</p>
   </div>
-  <ul class="chips small"><li>Raspberry Pi</li><li>Camera systems</li><li>Python</li><li>Test design</li><li>Computer vision</li></ul>
+  <ul class="chips small"><li>Hardware selection</li><li>Raspberry Pi</li><li>Test rigs</li><li>Field testing</li></ul>
   <blockquote>"The equations assume a perfect world, so check them on real photos."</blockquote>
 </article>
 
