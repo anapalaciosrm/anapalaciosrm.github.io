@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ana Palacios | Mechanical Engineer</title>
+<meta name="description" content="Ana Palacios, Stanford mechanical engineering student. Hardware testing, sensors and field systems for energy and water.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top">Ana Palacios</a>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#builds">Builds</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <p class="eyebrow">Mechanical Engineering, Stanford University, Class of 2027</p>
+  <h1>I build and test hardware that has to work outside the lab.</h1>
+  <p class="lede">Sensors, test rigs and field systems for energy and water. I grew up in Mexico City, and I want to spend my career making the water and infrastructure there work better for the people who depend on it.</p>
+  <ul class="facts">
+    <li>R&amp;D Test Engineering Intern, Antora Energy</li>
+    <li>FAA Part 107 certified drone pilot</li>
+    <li>Winner, Stanford Cleantech Hackathon 2026</li>
+    <li>Finalist, Global Sustainability Challenge (Munich)</li>
+  </ul>
+  <div class="links">
+    <a class="btn" href="mailto:anapalaciosrm@gmail.com">Email</a>
+    <a class="btn ghost" href="https://github.com/anapalaciosrm" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+
+<section id="work" class="section">
+  <h2>Selected work</h2>
+
+  <article class="feature">
+    <div class="media">
+      <img src="assets/img/antora-1.jpg" alt="Ana working in the test lab at Antora Energy" onerror="this.closest('.media').classList.add('empty')">
+      <div class="fallback"><span>Antora Energy</span><small>Thermal energy storage</small></div>
+    </div>
+    <div class="text">
+      <p class="tag">Internship · Summer 2026 · San Jose</p>
+      <h3>Antora Energy, R&amp;D Test Engineering</h3>
+      <p>Antora builds thermal batteries that store clean electricity as heat for industry. I worked on the test and instrumentation side, taking projects from an open question to hardware running on its own.</p>
+      <ul>
+        <li>Built a camera based monitoring prototype on a Raspberry Pi that logs data continuously and sends alerts, and helped evaluate it for a plant wide decision.</li>
+        <li>Set up thermocouple data logging with live dashboards, and documented it so other engineers could reuse it.</li>
+        <li>Built and iterated an experimental rig to study how a heat transfer fluid degrades over time.</li>
+        <li>Wired module instrumentation and shadowed the controls team during alarm reviews.</li>
+      </ul>
+      <p class="tools">Python · Raspberry Pi · data acquisition · Grafana · thermal imaging · rig design</p>
+    </div>
+  </article>
+
+  <article class="feature flip">
+    <div class="media">
+      <img src="assets/img/drone-1.jpg" alt="Survey drone at the Stanford O'Donohue Family Farm" onerror="this.closest('.media').classList.add('empty')">
+      <div class="fallback"><span>Farm survey drone</span><small>In progress</small></div>
+    </div>
+    <div class="text">
+      <p class="tag">Capstone · Fall 2026 · In progress</p>
+      <h3>Autonomous drone for spotting gopher damage</h3>
+      <p>Gophers damage the fields at Stanford's O'Donohue Family Farm, and finding their holes by hand takes hours. Our team is building a drone that surveys the field on its own, finds the holes with computer vision, and maps them.</p>
+      <ul>
+        <li>I own the onboard side: a Raspberry Pi and camera that capture images in flight, run detection, and keep only the hole locations.</li>
+        <li>After landing, a phone tap at the dock pulls the locations so they are mapped and logged for the farm team.</li>
+        <li>Earned my FAA Part 107 remote pilot certificate to fly the survey.</li>
+      </ul>
+      <p class="tools">Raspberry Pi · computer vision · NFC · flight operations</p>
+    </div>
+  </article>
+
+  <article class="feature">
+    <div class="media gallery">
+      <img src="assets/img/floodmap-gsc.jpg" alt="FloodMAP team at the Global Sustainability Challenge">
+      <img src="assets/img/floodmap-wmm.jpg" alt="Weather monitoring module enclosure">
+      <img src="assets/img/floodmap-heatmap.jpg" alt="Sensor heatmap visualization">
+    </div>
+    <div class="text">
+      <p class="tag">Co-founder and Product Lead · 2025 to 2026</p>
+      <h3>FloodMAP: street level flood sensing for Mexico City</h3>
+      <p>Mexico City floods every rainy season, and the neighborhoods hit hardest have the least data. FloodMAP is a low cost network of sensors that measures rainfall and drain levels block by block, so crews can see a drain backing up before the street floods.</p>
+      <ul>
+        <li>Interviewed residents, hydrologists and city engineers to define the problem.</li>
+        <li>Built a working weather module prototype that streamed live readings to a dashboard and generated heatmaps.</li>
+        <li>Led the drain gauge design: chose a pressure sensor over flow meters and floats, wrote the test plan, and designed checks that tell a broken sensor apart from a clogged drain.</li>
+        <li>Finalist at the Global Sustainability Challenge, presented in Munich.</li>
+      </ul>
+      <p class="tools">ESP32 · sensors · Python · test planning · user research</p>
+    </div>
+  </article>
+
+  <article class="feature flip">
+    <div class="media">
+      <img src="assets/img/dengai-app.jpg" alt="Dengai route planning app showing inspection routes in Makassar">
+    </div>
+    <div class="text">
+      <p class="tag">Hackathon · October 2026 · Winner</p>
+      <h3>Dengai: daily routes for dengue inspection teams</h3>
+      <p>Stanford researchers can already find mosquito breeding sites from drone images. The hard part is getting a small health team to the right sites with the hours and budget they have. In one day, my team built a tool that turns that drone map into tomorrow morning's inspection routes for Makassar, Indonesia.</p>
+      <ul>
+        <li>Ranks sites by risk, plans walking and motorbike routes on real streets, and sends each team its plan over WhatsApp.</li>
+        <li>In our demo, two teams reached 28 of 50 high priority sites, compared with 18 when they simply visited the riskiest sites first, for about the same daily cost.</li>
+      </ul>
+      <p class="tools">Python · Google OR Tools · OpenStreetMap · Lara Rozanski and Alied Monica</p>
+    </div>
+  </article>
+</section>
+
+<section id="builds" class="section">
+  <h2>More builds</h2>
+  <div class="grid">
+
+    <a class="card" href="https://anapalaciosrm.github.io/me210-curling-droid/" target="_blank" rel="noopener">
+      <img src="assets/img/me210-robot.jpg" alt="Curling robot final assembly">
+      <div class="card-body">
+        <p class="tag">ME210 Mechatronics · Winter 2026</p>
+        <h4>Autonomous curling robot</h4>
+        <p>A team of four built a robot that finds IR beacons, follows a tape line and releases pucks at the target, all on its own. Each of us built and tested every subsystem before we integrated.</p>
+        <span class="more">Full project report ↗</span>
+      </div>
+    </a>
+
+    <div class="card">
+      <img src="assets/img/mecc-rig.jpg" alt="Test stand for the marine energy device">
+      <div class="card-body">
+        <p class="tag">Stanford Marine Energy team</p>
+        <h4>Wave powered ocean sensor buoy</h4>
+        <p>Sized a buoy and generator to power ocean sensors from waves: worked out how much power the sensors need, studied the waves at the site, estimated the loads, and built a test stand to try it.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/img/oceanoasis-buoy.jpg" alt="Wave powered desalination buoy in port">
+      <div class="card-body">
+        <p class="tag">Ocean Oasis · Canary Islands, Spain</p>
+        <h4>Wave powered desalination buoy</h4>
+        <p>Worked on a 2 meter scale prototype buoy that turns wave motion into fresh water. Built first models of how the buoy moves in waves and supported its structural design.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/img/jdg-board.jpg" alt="Juego de Gigantes backgammon board">
+      <div class="card-body">
+        <p class="tag">ME103 Manufacturing · Winter 2025</p>
+        <h4>Juego de Gigantes</h4>
+        <p>A backgammon board for my family, built as a tribute to Mexico City. The volcanoes are sand cast aluminum, the handle is milled with aqueduct arches, and the buildings are laser cut brass and aluminum.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/img/me127-wrench.jpg" alt="3D printed wrench used with a space glove">
+      <div class="card-body">
+        <p class="tag">ME127 Design for Additive Manufacturing · Spring 2025</p>
+        <h4>Printed tools and mechanisms</h4>
+        <p>A wrench for tightening a nut through a damaged panel during a spacewalk (done in 18 seconds with gloves on), a print in place geared coffee dispenser, and a stand shaped with generative design.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/img/phononic.jpg" alt="Simulated acoustic pressure through a phononic crystal">
+      <div class="card-body">
+        <p class="tag">Undergraduate research</p>
+        <h4>Origami inspired phononic crystals</h4>
+        <p>Simulated structures that block certain sound frequencies, and ran a study showing how spacing the elements farther apart shifts which frequencies get blocked.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="earlier">
+    <h3>Earlier experience</h3>
+    <ul>
+      <li><strong>Materiam</strong>, Mexico City, 2024. Turned client designs into manufacturable sheet metal parts, with CAD and fabrication drawings.</li>
+      <li><strong>Deep Dive</strong>, Mexico City, 2023. Built web scraping data pipelines at a machine learning consulting startup.</li>
+      <li><strong>mi feed</strong>, personal project. A calm, distraction free YouTube feed I built and host on GitHub Pages.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <h2>About</h2>
+  <div class="about-grid">
+    <div>
+      <p>I grew up in Mexico City, went to high school at The Thacher School in California, and now study mechanical engineering at Stanford. I am happiest when a project has a real place and real people attached to it, whether that is a flooded street, a farm field or a buoy in the Atlantic.</p>
+      <p>Outside of engineering I play rugby for Stanford Women's Rugby, and I freedive and hike whenever I can. I speak Spanish and English.</p>
+    </div>
+    <div class="contact">
+      <p class="tag">Get in touch</p>
+      <p><a href="mailto:anapalaciosrm@gmail.com">anapalaciosrm@gmail.com</a></p>
+      <p><a href="https://github.com/anapalaciosrm" target="_blank" rel="noopener">github.com/anapalaciosrm</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">Ana Palacios · Palo Alto and Mexico City</footer>
+
+</body>
+</html>
