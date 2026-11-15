@@ -165,3 +165,26 @@ blockquote {
   .nav nav a[href="#life"] { display: none; }
 }
 @media (min-width: 600px) and (max-width: 900px) { .mini-grid { grid-template-columns: 1fr 1fr; } }
+
+/* Centered, bigger, readable text */
+:root { --read: 740px; }
+body { font-size: 21px; line-height: 1.7; }
+.project > .meta, .project > h2, .project > .outcome,
+.more-sec > h2, .life > h2, .life > .lede { text-align: center; margin-left: auto; margin-right: auto; }
+.project > .outcome { max-width: 30em; }
+.prose, blockquote, .project > .chips, .life > .lede { max-width: var(--read); margin-left: auto; margin-right: auto; }
+.project > .chips { justify-content: center; }
+blockquote { font-size: 26px; text-align: center; border-left: 0; padding: 28px 0 0; border-top: 2px solid var(--coral); max-width: 34em; }
+.lede.small { font-size: 21px; }
+.sub dd, .mini p { font-size: 20px; }
+.sub dt { font-size: 13px; }
+.mini h4 { font-size: 26px; }
+.chips li { font-size: 14px; }
+.chips.small li { font-size: 13px; }
+.label { font-size: 14px; }
+.gallery figcaption { font-size: 13px; }
+@media (max-width: 900px) {
+  body { font-size: 19px; }
+  .sub dd, .mini p { font-size: 19px; }
+  blockquote { font-size: 22px; }
+}
