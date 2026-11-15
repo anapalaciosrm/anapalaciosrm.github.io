@@ -178,3 +178,25 @@ blockquote {
   .cap { left: 12px; right: 12px; bottom: 10px; }
   .nav nav a { margin-left: 14px; }
 }
+
+/* Polish pass */
+.btn { display: inline-block; font-family: "Manrope", sans-serif; font-weight: 600; font-size: var(--t-small); color: var(--black) !important; background: var(--coral); padding: 10px 24px; border-radius: 999px; border: 0 !important; margin: 4px 0 0 !important; transition: background .2s; }
+.btn:hover { background: var(--turq); }
+.subprojects { align-items: start; }
+.mini img { background: transparent; object-fit: contain; }
+.contact { margin-top: 0; }
+.life { padding-bottom: 0; }
+
+/* Phones: galleries become a swipeable strip so the page stays short */
+@media (max-width: 600px) {
+  .gallery { display: block; margin-left: calc(var(--pad) * -1); margin-right: calc(var(--pad) * -1); }
+  .gallery .grow { display: contents; }
+  .gallery { overflow-x: auto; white-space: nowrap; scroll-snap-type: x mandatory; padding: 0 var(--pad); -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .gallery::-webkit-scrollbar { display: none; }
+  .gallery figure { display: inline-block; vertical-align: top; height: 250px; width: calc(250px * var(--ar)) !important; max-width: 86vw; margin-right: 10px; scroll-snap-align: center; white-space: normal; }
+  .gallery figure:last-child { margin-right: 0; }
+  .gallery figure img { object-fit: cover; }
+  .gallery::after { content: ""; }
+}
+@media (min-width: 601px) { .grow[style*="--n:1"] { max-width: calc(min(320px, 26vw) * var(--sum)); } }
+.subprojects { align-items: stretch; }
